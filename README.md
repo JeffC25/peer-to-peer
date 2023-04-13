@@ -1,5 +1,5 @@
 # Peer-to-peer
----
+
 ## Installation
 
 #### Clone the repository in your machine
@@ -18,7 +18,7 @@ You need to have [Python](https://www.python.org/downloads/) installed to run th
 python p2p.py
 ```
 
----
+
 ## Documentation
 #### This [Python code](./p2p.py) creates a simple peer-to-peer network using the [socket module](https://docs.python.org/3/library/socket.html) which allows the user to exchange messages.
 
@@ -44,5 +44,5 @@ python p2p.py
 - `connOrWait()`: Helper function that prompts the user to either connect to another peer or wait for another peer to connect.
 
 - `main()`: Creates a new instance of the Peer class and displays the host and port number.
---- 
+
 #### Overall, it provides a simple implementation of a peer-to-peer network using sockets.
