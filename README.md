@@ -39,10 +39,4 @@ python p2p.py
 
 - `receiveMessage(connection, address)`: Receives a message from the connected peer.
 
-- `close()`: Closes the socket connection.
-
 - `connOrWait()`: Helper function that prompts the user to either connect to another peer or wait for another peer to connect.
-
-- `main()`: Creates a new instance of the Peer class and displays the host and port number.
-
-#### Overall, it provides a simple implementation of a peer-to-peer network using sockets.
