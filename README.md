@@ -20,9 +20,9 @@ python p2p.py
 
 ---
 ## Documentation
-##### This [Python code](./p2p.py) creates a simple peer-to-peer network using the [socket module](https://docs.python.org/3/library/socket.html) which allows the user to exchange messages.
+#### This [Python code](./p2p.py) creates a simple peer-to-peer network using the [socket module](https://docs.python.org/3/library/socket.html) which allows the user to exchange messages.
 
-##### It prompts the user to either connect to another peer or wait for another peer to connect. If the user chooses to connect, they are prompted for the host and port number of the peer they want to connect to. They can then enter a message to send to the connected peer. If the user chooses to wait, the program waits for another peer to connect and displays any received messages.
+#### It prompts the user to either connect to another peer or wait for another peer to connect. If the user chooses to connect, they are prompted for the host and port number of the peer they want to connect to. They can then enter a message to send to the connected peer. If the user chooses to wait, the program waits for another peer to connect and displays any received messages.
 
 
 #### The Peer class has the following methods:
