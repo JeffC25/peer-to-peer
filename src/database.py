@@ -6,22 +6,22 @@ def createDatabase():
     connection = sqlite3.connect(database)
     cursor = connection.cursor()
 
-    msgTable = """CREATE TABLE IF NOT EXISTS messages(
+    command = """CREATE TABLE IF NOT EXISTS messages(
         message_id INTEGER PRIMARY KEY, 
         sender TEXT, 
         reciever TEXT,
         message BLOB);"""
-    cursor.execute(msgTable)
+    cursor.execute(command)
 
-    cursor.commit()
-    cursor.close()
+    connection.commit()
+    connection.close()
 
-def sendMessage(sender, reciever, message):
+def addMessage(sender, reciever, message):
     connection = sqlite3.connect(database)
-    cursor = connection.cursor
+    cursor = connection.cursor()
 
-    sendMsg = """INSERT INTO messages(sender, reciever, message) VALUES (?, ?, ?)"""
-    cursor.execute(sendMsg, (sender, reciever, message))
+    command = "INSERT INTO messages (sender, reciever, message) VALUES (?, ?, ?)"
+    cursor.execute(command, (sender, reciever, message))
 
-    cursor.commit()
-    cursor.close()
+    connection.commit()
+    connection.close()
