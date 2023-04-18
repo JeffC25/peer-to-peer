@@ -8,17 +8,14 @@ class Peer():
         host = "localhost"
         sock.bind((host, 0))
 
-
     def displayAddress(self):
         print(f"Host: {self.sock.getsockname()[0]}")
         print(f"Ports: {self.sock.getsockname()[1]}")
     
-
     def connect(self, host, port):
         self.sock.connect((host, port))
         print(f"Connected to {host}:{port}")
         return host, port
-
 
     def wait(self):
         self.sock.listen(1)
@@ -26,11 +23,9 @@ class Peer():
         connection, clientAddress = self.sock.accept()
         print(f"Connected to {clientAddress}")
         return connection, clientAddress
-    
 
     def sendMessage(self, message):
         self.sock.sendall(message.encode())
-
 
     def recieveMessage(self, connection, address):
         data = connection.recv(1024)
@@ -45,12 +40,9 @@ def connOrWait():
         action = input("Connect (c) or wait (w): ")
     return action
 
-
 def main():
     peer = Peer()
-
     peer.displayAddress()
-
     action = connOrWait()
 
     if action == 'c':
@@ -64,8 +56,6 @@ def main():
     else:
         connection, address = peer.wait()
         peer.recieveMessage(connection, address)
-
-
 
 if __name__ == '__main__':
     main()
