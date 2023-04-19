@@ -41,4 +41,4 @@ python p2p.py
 
 - `connOrWait()`: Helper function that prompts the user to either connect to another peer or wait for another peer to connect.
 
--`close()`: Helper function that closes the socket connection
+- `close()`: Helper function that closes the socket connection
