@@ -33,10 +33,12 @@ python p2p.py
 
 - `connect(host, port)`: Connects to another peer with the specified host and port number.
 
-- `wait()`: Waits for another peer to connect to the socket.
+- `listen()`: Waits for another peer to connect to the socket.
 
 - `sendMessage(message)`: Sends a message to the connected peer.
 
 - `receiveMessage(connection, address)`: Receives a message from the connected peer.
 
 - `connOrWait()`: Helper function that prompts the user to either connect to another peer or wait for another peer to connect.
+
+-`close()`: Helper function that closes the socket connection
