@@ -15,7 +15,7 @@ cd <path>
 #### Run the following command to start the peer-to-peer network
 You need to have [Python](https://www.python.org/downloads/) installed to run this
 ```batch
-python p2p.py
+python src/p2p.py
 ```
 
 
