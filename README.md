@@ -15,12 +15,12 @@ cd <path>
 #### Run the following command to start the peer-to-peer network
 You need to have [Python](https://www.python.org/downloads/) installed to run this
 ```batch
-python src/p2p.py
+python src/app.py
 ```
 
 
 ## Documentation
-#### This [Python code](./src/p2p.py) creates a simple peer-to-peer network using the [socket module](https://docs.python.org/3/library/socket.html) which allows the user to exchange messages.
+#### This [Python code](./src/app.py) creates a simple peer-to-peer network using the [socket module](https://docs.python.org/3/library/socket.html) which allows the user to exchange messages.
 
 #### It prompts the user to either connect to another peer or wait for another peer to connect. If the user chooses to connect, they are prompted for the host and port number of the peer they want to connect to. They can then enter a message to send to the connected peer. If the user chooses to wait, the program waits for another peer to connect and displays any received messages.
 

@@ -13,12 +13,13 @@ class Peer():
 
         sock.bind((self.host, 0))
 
-    # print host address to terminal
+    # display host address to terminal
     def displayAddress(self):
         print(f"Host: {self.sock.getsockname()[0]}")
         print(f"Ports: {self.sock.getsockname()[1]}")
     
     # connect to peer
+    # example: host: localhost, port: 8000
     def connect(self, host, port):
         self.sock.connect((host, port))
         self.reciever = (host, port)
